@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Now Playing</title>
+    <!-- Bootstrap CSS -->  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #121212;  
+            color: #FFFFFF;
+            font-family: 'Poppins', sans-serif;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .navbar-custom {
+            background-color: #121212;
+            color: #FFFFFF;
+        }
+        .navbar-brand {
+            margin-left: 10px;
+        }
+        .player-container {
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+            margin: 20px auto;
+        }
+        .album-cover {
+            border-radius: 15px;
+            width: 100%;
+            max-width: 300px;
+        }
+        .song-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .artist-name {
+            font-size: 14px;
+            color: #B3B3B3;
+        }
+        .sound-wave {
+            width: 100%;
+            max-width: 350px;
+            margin: 20px 0;
+        }
+        .time-info {
+            font-size: 12px;
+            color: #B3B3B3;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+        .control-buttons i {
+            font-size: 36px;
+            color: #FFFFFF;
+            margin: 0 15px;
+        }
+        .control-buttons i.play {
+            font-size: 48px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-custom">
+        <div class="container-fluid d-flex align-items-center">
+            <a href="#" class="navbar-brand text-white">
+                <i class="bi bi-chevron-left"></i>
+            </a>
+            <div class="mx-auto text-white">
+                Now Playing
+            </div>
+        </div>
+    </nav>
+
+    <!-- Oynatıcı İçeriği -->
+    <div class="player-container">
+        <!-- Albüm Kapağı -->
+        <img src="img/401dad5a-4934-4bf6-ba09-3a733e8e3981.jpg" alt="Album Cover" class="album-cover">
+        <!-- Şarkı Bilgileri -->
+        <div class="song-title">The missing 96 percent of the universe</div>
+        <div class="artist-name">Claire Malone</div>
+        <!-- Ses Dalga Görseli -->
+        <img src="img2/image.png" alt="Sound Wave" class="sound-wave">
+        <!-- Süre Bilgisi -->
+        <div class="time-info">
+            <span>24:32</span>
+            <span>34:00</span>
+        </div>
+        <!-- Kontrol Düğmeleri -->
+        <div class="control-buttons">
+            <i class="bi bi-skip-backward-circle-fill"></i>
+            <i class="bi bi-play-circle-fill play"></i>
+            <i class="bi bi-skip-forward-circle-fill"></i>
+        </div>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
