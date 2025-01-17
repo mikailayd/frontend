@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dune Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            background-color: #F5F5F5;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-icon {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            font-size: 1.5rem;
+            color: #1A1A44;
+        }
+
+        .header-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #1A1A44;
+            margin: 0;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .book-details {
+            text-align: center;
+            margin: 20px;
+            position: relative;
+        }
+
+        .book-details img {
+            width: 200px;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .favorite-icon {
+            font-size: 1.5rem;
+            color: #FF6F41;
+            cursor: pointer;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .book-title {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #1A1A44;
+            margin-bottom: 5px;
+        }
+
+        .book-author {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .summary-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+
+        .summary-title {
+            font-size: 1.1rem;
+            color: #1A1A44;
+            margin-bottom: 10px;
+            text-align: center; 
+        }
+
+        .summary {
+            font-size: 1rem;
+            color: #333;
+            line-height: 1.5;
+            text-align: center; 
+        }
+
+        .price {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #FF6F41;
+            margin: 20px 0;
+        }
+
+        .buy-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #FF6F41;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+            margin: 20px auto;
+        }
+
+        .buy-button:hover {
+            background-color: #e65b34;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="header-icon" onclick="window.history.back()">
+            &lt;
+        </div>
+        <div class="header-right">
+            <p class="header-title">Book Details</p>
+        </div>
+    </div>
+
+    <!-- Kitap Detayları -->
+    <div class="book-details">
+        <img src="img/9786053754794_Dune.jpg" alt="Dune">
+        <i class="bi bi-heart favorite-icon"></i>
+        <div class="book-title">Dune</div>
+        <div class="book-author">Frank Herbert</div>
+    </div>
+
+    <!-- Summary -->
+    <div class="summary-container">
+        <h6 class="summary-title">Summary</h6>
+        <div class="summary">
+            <p>
+                Dune is set in the distant future amidst a feudal interstellar society <br>
+                in which various noble houses control planetary fiefs. It tells the story of young Paul Atreides, <br>
+                whose family accepts the stewardship of the planet Arrakis. While the planet is an inhospitable and <br>
+                sparsely populated desert wasteland, it is the only source of melange, or "spice", a drug that...
+            </p>
+        </div>
+    </div>
+
+    <!--Fiyat ve Satın Al Düğmesi -->
+    <div class="button-container">
+        <a href="#" class="buy-button">87,75 $ Buy Now</a>
+    </div>
+</body>
+</html>

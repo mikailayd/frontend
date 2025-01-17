@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma Tasarımı</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+       /* Hero Section */
+       .hero-section {
+            background-color: #FFD54F;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            height: 50vh;
+            background-image: url("img/image.png");  
+            background-position: center;
+            background-size: contain; 
+            background-repeat: no-repeat; 
+        }
+
+        .hero-section h1 {
+            margin-top: 100px;
+            font-size: 2.5rem;
+            z-index: 1;  
+            position: relative;
+        }
+
+        .hero-section .bottom-image {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40%;
+            max-width: 100%;
+        }
+
+        .statistics-section {
+            background-color: #f8f9fa;
+            padding: 30px 0;
+        }
+
+        .contact-section {
+            background-color: #F9FAFB;
+            padding: 60px 20px;
+        }
+
+        .about-section h2 {
+            margin-top: 60px;
+            font-size: 28px;
+            font-weight: bold;
+            margin-left: 20px;
+            margin-bottom: 20px;
+            color: #000;
+            text-align: left;
+        }
+
+        .about-section p {
+            font-size: 25px;
+            line-height: 1.8;
+            color: #0a0000;
+            text-align: left;
+            margin-left: 20px;
+        }
+
+        .about-section img {
+            margin-top: 60px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%;
+        }
+
+        .team-card .image-wrapper {
+            background: #FFFFFF;
+            padding: 20px;
+            margin: 0 auto;
+            width: 220px;
+            height: 220px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 4px solid #FFE3E3;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+        }
+
+        .team-card img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 0%;
+        }
+
+        .team-card {
+            width: 300px;
+            height: 300px;
+            padding: 20px;
+            border: none;
+            background-color: #ffffff;
+            max-width: 300px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .team-card h5 {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin-top: 10px;
+        }
+
+        .team-card p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .statistics-section {
+            background-color: #101010;
+            padding: 40px 0;
+            color: #FFC700;
+        }
+
+        .statistics-section .stat-item h3 {
+            font-size: 48px;
+            font-weight: bold;
+            margin: 0;
+            color: #FFC700;
+        }
+
+        .statistics-section .stat-item p {
+            font-size: 18px;
+            font-weight: 500;
+            color: #FFFFFF;
+            margin-top: 10px;
+        }
+
+        .statistics-section .row {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+        }
+
+        .stat-item {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .contact-section {
+            background-color: #F9FAFB;
+            padding: 60px 20px;
+        }
+
+        .contact-image img {
+            margin-left: -250px;
+            max-height: 650px;
+            width: auto;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-section .container {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .contact-form-wrapper h2 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            color: #101010;
+        }
+
+        .contact-form .form-label {
+            font-weight: 500;
+            font-size: 16px;
+            color: #101010;
+        }
+
+        .contact-form .form-control {
+            border: 1px solid #D1D5DB;
+            border-radius: 0;
+            padding: 10px 15px;
+            font-size: 14px;
+        }
+
+        .contact-form button {
+            background-color: #000;
+            color: #fff;
+            font-weight: 600;
+            font-size: 16px;
+            border-radius: 0;
+            border: 1px solid #000;
+        }
+
+        .contact-form button:hover {
+            background-color: #000;
+            color: #fff;
+            cursor: default;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Kahraman Bölümü -->
+<section class="hero-section">
+    <h1>Let's create something<br> great together.</h1>
+    <img src="img2/image.png" alt="Second Image" class="img-fluid bottom-image">
+</section>
+
+
+<!-- Hakkında Bölümü -->
+<section class="about-section">
+    <div class="container text-center">
+        <h2>Who we are</h2>
+        <p>
+            We love what we do and create partnerships with our clients to ensure their digital transformation is <br>
+            positioned for long-term success. We believe that the human dimensions essential to start any successful <br>
+            project and that this is where splendid emotional relationships between the company and people are born. 
+        </p>
+    </div>
+    <div>
+        <img src="img/31a357d3-4ab5-4e35-9041-6c141d0856ed.jpg" alt="">
+    </div>
+</section>
+
+<!-- Takım Bölümü -->
+<section class="container my-5 text-center">
+    <h2 class="mb-4">Meet the humans behind the magic</h2>
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="team-card">
+                <img src="img/df71b0f0-e8aa-4f27-89d0-a675d01afa83.jpg" alt="Esther Howard">
+                <h5>Esther Howard</h5>
+                <p>Founder</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="team-card">
+                <img src="img/ebcf4f7d-2e68-4977-90b9-6efa472a1d7a.jpg" alt="Cody Fisher">
+                <h5>Cody Fisher</h5>
+                <p>Developer</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="team-card">
+                <img src="img/1145510e-86d3-48e3-b19a-a9a5b646bfcd.jpg" alt="Brooklyn Simmons">
+                <h5>Brooklyn Simmons</h5>
+                <p>Designer</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- İstatistik Bölümü -->
+<section class="statistics-section text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 stat-item">
+                <h3>150+</h3>
+                <p>Clients Worldwide</p>
+            </div>
+            <div class="col-md-3 stat-item">
+                <h3>20+</h3>
+                <p>Team Members</p>
+            </div>
+            <div class="col-md-3 stat-item">
+                <h3>100+</h3>
+                <p>Projects Completed</p>
+            </div>
+            <div class="col-md-3 stat-item">
+                <h3>85M+</h3>
+                <p>Revenue Generated</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- İletişim Bölümü-->
+<section class="contact-section py-5 bg-light">
+    <div class="container">
+        <div class="contact-image col-md-6 text-center">
+            <img src="img/cf3b4f69-03ee-4220-8983-e670487e87bc.jpg" alt="Contact Illustration" class="img-fluid">
+        </div>
+        <div class="contact-form-wrapper col-md-6">
+            <h2 class="text-center">We'd love to hear from you</h2>
+            <form class="mt-4 contact-form">
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="name" placeholder=" Name*" required>
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" id="email" placeholder=" Email*" required>
+                </div>
+                <div class="mb-3">
+                    <input type="url" class="form-control" id="website" placeholder=" Website URL*">
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" id="message" rows="4" placeholder=" Message*"></textarea>
+                </div>
+                <button type="submit" class="btn w-100">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

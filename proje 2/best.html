@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Seller</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet"> <!-- Bootstrap Icons -->
+    <style>
+        body {
+            margin: 0;
+            background-color: #F5F5F5;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-icon {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .header-icon i {
+            font-size: 1.5rem;  
+            color: #1A1A44;
+        }
+
+        .header-title {
+            font-size: 1.5rem;
+            color: #1A1A44;
+            font-weight: bold;
+            margin-left: auto; 
+        }
+
+        .book-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .book-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+        }
+
+        .book-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .book-title {
+            font-size: 1rem;
+            font-weight: bold;
+            color: #1A1A44;
+            margin-bottom: 5px;
+        }
+
+        .book-author {
+            font-size: 0.8rem;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .book-price {
+            font-size: 1rem;
+            font-weight: bold;
+            color: #FF6F41;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <!-- Geri İkonu ("<") -->
+        <div class="header-icon" onclick="window.history.back()">
+            &lt;  
+        </div>
+
+        <!-- Başlık -->
+        <h1 class="header-title">Best Seller</h1>
+    </div>
+
+     
+        <div class="book-grid">
+            <!-- Dune -->
+            <div class="book-card">
+                <a href="detail.html" style="text-decoration: none; color: inherit;">
+                    <img src="img/9786053754794_Dune.jpg" alt="Dune">
+                    <div class="book-title">Dune</div>
+                    <div class="book-author">Frank Herbert</div>
+                    <div class="book-price">87,75 $</div>
+                </a>
+            </div>
+    
+        <!-- Diğer kitap kartları -->
+        <div class="book-card">
+            <img src="img/0000000064038-1.jpg" alt="1984">
+            <div class="book-title">1984</div>
+            <div class="book-author">George Orwell</div>
+            <div class="book-price">35,75 $</div>
+        </div>
+        <div class="book-card">
+            <img src="img/ikigai.jpg" alt="Ikigai">
+            <div class="book-title">Ikigai</div>
+            <div class="book-author">Héctor García</div>
+            <div class="book-price">36,00 $</div>
+        </div>
+        <div class="book-card">
+            <img src="img/cavdar tarlasında cocuklar.webp" alt="Catcher in the Rye">
+            <div class="book-title">Çavdar Tarlasında Çocuklar</div>
+            <div class="book-author">J.D. Salinger</div>
+            <div class="book-price">35,75$</div>
+        </div>
+        <div class="book-card">
+            <img src="img/kurk-mantolu-madonna---sabahattin-ali-751e.webp" alt="Catcher in the Rye">
+            <div class="book-title">Kürk Mantolu Madona</div>
+            <div class="book-author">J.D. Salinger</div>
+            <div class="book-price">36,00$</div>
+        </div>
+        <div class="book-card">
+            <img src="img/tutunamayanlar.jpg" alt="Catcher in the Rye">
+            <div class="book-title">Tutunamayanlar</div>
+            <div class="book-author">J.D. Salinger</div>
+            <div class="book-price">35,75$</div>
+        </div>
+    </div>
+
+     <!-- Bootstrap JS -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
